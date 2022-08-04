@@ -1,0 +1,27 @@
+<h2>JCV SPORTS CLUB</h2>
+<div class="login">
+    <form action="login.php" id="login">
+        
+            <label for="Uname">UserName</label><br/>
+            <br/>
+            <input type="text" name="Uname" id="name" placeholder="UserName"[(ngModel)]="email"><br/>
+    
+        <br/>
+        <label for="Upass">Password</label><br/>
+        <br/>
+        <input type="password" name="Upass" id="pass" placeholder="Password"[(ngModel)]="password"><br/>
+        <br/>
+        <mat-card-actions>
+            <button mat-button color="primary" (click)="LoginClick()">Login</button>
+        </mat-card-actions><br/>
+        <br/>
+        <mat-card-actions>
+            <button mat-button color="danger" ><a [routerLink]="['/user']">New User? Please Click here to register</a></button>
+        </mat-card-actions>
+        
+    </form>
+</div>
+
+
+
+

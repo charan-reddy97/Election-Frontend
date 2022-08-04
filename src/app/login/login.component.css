@@ -1,0 +1,47 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #6abadeba;
+   
+    font-family: Arial;
+}
+.login
+{
+    width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 80px;
+    background-image: url(https://www.iimnagpur.ac.in/wp-content/uploads/2018/09/spart-club.jpg);
+    background-color: #23463f;
+   
+    border-radius: 15px;
+
+}
+h2
+{
+    background-color: rgb(44, 96, 163);
+    text-align: center;
+    color: crimson;
+}
+#pass
+{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#name
+{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;   
+}
+#logins
+{
+  margin-right: 50px;
+}
