@@ -21,8 +21,11 @@ export class AdminGuard implements CanActivate {
         
       }
       else
-      alert("You are not authorized to create a poll")
+      {
+        alert("You are not authorized to create a poll")
         return false;
+      }
+      
 
   }
   

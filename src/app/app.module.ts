@@ -14,7 +14,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
-import { MatCardModule } from '@angular/material/card'
+import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input'
+import { MatToolbarModule } from '@angular/material/toolbar'
+import { MatIconModule } from '@angular/material/icon'
+import { MatSelectModule} from '@angular/material/select'
+import { CreatePollComponent } from './create-poll/create-poll.component';
+import { ElectionsComponent } from './elections/elections.component'
 
 @NgModule({
   declarations: [
@@ -24,6 +30,8 @@ import { MatCardModule } from '@angular/material/card'
     CandidateComponent,
     VotingComponent,
     ChoiceComponent,
+    CreatePollComponent,
+    ElectionsComponent,
    
   ],
   imports: [
@@ -34,7 +42,11 @@ import { MatCardModule } from '@angular/material/card'
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatInputModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSelectModule
     
   ],
   providers: [],

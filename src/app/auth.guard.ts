@@ -14,8 +14,11 @@ export class AuthGuard implements CanActivate {
     if(localStorage.getItem("Token"))
       return true;
     else
-    //alert("Login Failed")
+    {
+      alert("Login Failed")
       return false;
+    }
+   
   }
   
   
