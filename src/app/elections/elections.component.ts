@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Election } from '../Common/Election';
 import { ElectionsService } from '../Services/elections.service';
 
@@ -9,11 +10,13 @@ import { ElectionsService } from '../Services/elections.service';
 })
 export class ElectionsComponent implements OnInit {
   elections:Election[]=[]
-  constructor(private electionservice:ElectionsService) { }
+  id:number=0
+  constructor(private electionservice:ElectionsService,private route:Router) { }
 
   ngOnInit(): void {  
     let respone=this.electionservice.FetchElection();
     respone.subscribe(d=>this.elections=d);
   }
+  
 
 }

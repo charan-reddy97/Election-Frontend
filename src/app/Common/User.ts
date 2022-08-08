@@ -1,7 +1,7 @@
 export class User
 {
     firstname:string='';
-    nastname:string='';
+    lastname:string='';
     gender:string='';
     dob:number=0;
     aadhar:number=0;

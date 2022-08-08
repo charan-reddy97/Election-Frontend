@@ -1,24 +1,29 @@
-<mat-toolbar color="primary">
-    <mat-toolbar-row id="Tools">
-        <span>JVC Sports Club</span>
-    </mat-toolbar-row>
-      
-</mat-toolbar><br/>
+<div class="topnav">
+  <a  [routerLink]="['/choice']">Home</a>
+  <a [routerLink]="['/candidate']" > Reg.Candidate </a>
+  <a class="active" >Create Poll</a>
+  
+  <a  [routerLink]="['/elections']">Elections</a>
+  <a>Vote</a>
+  <a href="">Results</a>
+</div>
+<div class="poll">
 <br/>
-<mat-form-field class="example-full-width" appearance="fill">
+<mat-form-field class="example-full-width" appearance="fill" id="electionnumber">
     <mat-label>Election Number</mat-label>
     <input matInput type="number"[(ngModel)]="electionnumber">
   </mat-form-field><br/>
   <br/>
   
-<mat-form-field class="example-full-width" appearance="fill">
+<mat-form-field class="example-full-width" appearance="fill" id="position">
   <mat-label>Position</mat-label>
   <input matInput type="text"[(ngModel)]="position">
 </mat-form-field><br/>
   <br/>
-  <mat-form-field class="example-full-width" appearance="fill">
+  <mat-form-field class="example-full-width" appearance="fill" id="description">
     <mat-label>Description</mat-label>
     <input matInput type="text"[(ngModel)]="description">
   </mat-form-field><br/>
   <br/>
-  <button mat-raised-button color="primary" (click)="OnClick()">Create Poll</button>
+  <button mat-raised-button color="primary" (click)="OnClick()" id="register">Create Poll</button>
+</div>

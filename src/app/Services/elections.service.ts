@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Candidate } from '../Common/Candidate';
 import { baseUrl } from '../Common/Constants';
 import { Election } from '../Common/Election';
 
@@ -8,7 +9,7 @@ import { Election } from '../Common/Election';
   providedIn: 'root'
 })
 export class ElectionsService {
-
+ id:number=0;
   constructor(private http:HttpClient) { }
   FetchElection():Observable<Array<Election>>
   {
@@ -27,4 +28,9 @@ export class ElectionsService {
     return request;
 
   }
+  //FetchElectionById():Observable<Candidate>
+  //{
+    //let election=this.http.get<Array<any>(baseUrl+'/api/poll/byid/'+this.id);
+    //election.su
+  //}
 }

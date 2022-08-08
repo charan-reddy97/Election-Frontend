@@ -1,4 +1,83 @@
-#Tool
+#electionnumber
 {
-    color: rgb(237, 100, 184);
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#position
+{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#description
+{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#electionnumber
+{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+.topnav {
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+  }
+  
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 70px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+ 
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .home
+  {
+    width: 500px;
+    height: 500px;
+  }
+#register
+{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+.poll
+{
+    
+    width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 80px;
+    
+    border-radius: 15px;
+
 }

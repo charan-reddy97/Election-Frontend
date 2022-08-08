@@ -1,42 +1,77 @@
-<h2>Candidate Registration</h2>
-<div class="register">
-    <form action="get" >
-        <label for="firstname">FirstName</label><br/>
-        <input type="text" id="firstname">
-        <br/>
-        <label for="lastname">LastName</label><br/>
-        <input type="text" id="lastname">
-        <br/>
-        <label for="fathername">FatherName</label><br/>
-        <input type="text" id="fathername">
-        <br/>
-        <label for="mothername">MotherName</label><br/>
-        <input type="text" id="mothername">
-        <br/>
-        <label for="address">Address</label><br/>
-        <input type="text" id="address">
-        <br/>
-        <label for="aadhar">AadharNumber</label><br/>
-        <input type="number" id="aadhar">
-        <br/>
-        <br/>
-        <select name="gender" id="gender">
-            <option>Select Gender</option>
-            <option>Male</option>
-            <option>Female</option>
-        </select>
-        <br/>
-        <br/>
-        <label for="dob">Date of Birth</label><br/>
-        <input type="date" name="date" id="dob">
-        <br/>
-        <br/>
-        <label for="file">Add your photo</label><br/>
-        <input type="file" id="file">
-        <br/>
-        <br/>
-        <button type="button">Register</button>
+<div class="topnav">
+        <a  [routerLink]="['/choice']">Home</a>
+        <a  class="active"> Reg.Candidate </a>
+        <a [routerLink]="['/poll']">Create Poll</a>
+        
+        <a  [routerLink]="['/elections']">Elections</a>
+        <a>Vote</a>
+        <a >Results</a>
+      </div>
+<div class="register" background-color="red"> 
+<mat-toolbar color="primary"  >
+        <mat-toolbar-row id="Tools" text-align="center">
+            <span>Candidate Registration</span>
+        </mat-toolbar-row>
+</mat-toolbar>
+          <br/>
+           
 
-    </form>
+    
+        <mat-form-field class="example-full-width" appearance="fill" id="firstname">
+                <mat-label>FirstName</mat-label>
+                <input matInput type="text"[(ngModel)]="firstname">
+              </mat-form-field><br/>
+              <br/>
+              <mat-form-field class="example-full-width" appearance="fill" id="lastname">
+                <mat-label>LastName</mat-label>
+                <input matInput type="text"[(ngModel)]="lastname">
+              </mat-form-field><br/>
+              <br/>
+              <mat-form-field class="example-full-width" appearance="fill" id="firstname">
+                <mat-label>UserId</mat-label>
+                <input matInput type="number"[(ngModel)]="userid">
+              </mat-form-field><br/>
+              <br/>
+        
+              <mat-form-field class="example-full-width" appearance="fill" id="address">
+                <mat-label>Address</mat-label>
+                <input matInput type="text"[(ngModel)]="address">
+              </mat-form-field><br/>
+              <br/>
+              <mat-form-field class="example-full-width" appearance="fill" id="aadhar">
+                <mat-label>Aadhar Number</mat-label>
+                <input matInput type="number"[(ngModel)]="aadhar">
+              </mat-form-field><br/>
+              <br/>
+        
+              <mat-form-field class="example-full-width" appearance="fill" id="gender">
+                <mat-label>Gender</mat-label>
+                <input matInput type="text"[(ngModel)]="gender">
+              </mat-form-field><br/>
+              <br/>
+              <mat-form-field class="example-full-width" appearance="fill" id="age">
+                <mat-label>Age</mat-label>
+                <input matInput type="number"[(ngModel)]="age">
+              </mat-form-field><br/>
+              <br/>
+              <mat-form-field class="example-full-width" appearance="fill" id="experience">
+                <mat-label>Experience</mat-label>
+                <input matInput type="text"[(ngModel)]="experience">
+              </mat-form-field><br/>
+              <br/>
+              <mat-form-field class="example-full-width" appearance="fill" id="electionnumber">
+                <mat-label>Election Number</mat-label>
+                <input matInput type="text"[(ngModel)]="electionnumber">
+              </mat-form-field><br/>
+              <br/>
+      
+        <label for="file">Add your photo</label><br/>
+        <input type="file" id="file" [(ngModel)]="photo" observeFiles>
+        <br/>
+        <br/>
+        <button mat-raised-button color="primary" (click)="AddCandidate()">Register</button>
+   
+
+    
 </div>
 

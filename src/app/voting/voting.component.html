@@ -1,1 +1,12 @@
-<p>voting works!</p>
+<div class="topnav">
+    <a  [routerLink]="['/choice']">Home</a>
+    <a [routerLink]="['/candidate']" > Reg.Candidate </a>
+    <a  [routerLink]="['/poll']">Create Poll</a>
+    <a href="['/election']" >Elections</a>
+    <a class="active" [routerLink]="['/vote']">Vote</a>
+    <a >Results</a>
+  </div>
+  <div *ngFor="let candidate of candidates">
+        {{candidate.firstname}}      
+  </div>
+

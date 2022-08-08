@@ -10,7 +10,7 @@ import { ElectionsService } from '../Services/elections.service';
 })
 export class CreatePollComponent implements OnInit {
 
-  elections:Election[]=[]
+  //elections:Election[]=[]
   constructor(private electionservice:ElectionsService,private route:Router) { }
   electionnumber:number=0;
   position:string='';

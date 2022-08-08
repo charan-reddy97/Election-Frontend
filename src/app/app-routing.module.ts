@@ -9,6 +9,7 @@ import { CreatePollComponent } from './create-poll/create-poll.component';
 import { ElectionsComponent } from './elections/elections.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { ResultComponent } from './result/result.component';
 import { VotingComponent } from './voting/voting.component';
 
 const routes: Routes = [
@@ -16,9 +17,10 @@ const routes: Routes = [
   {path:'choice', component:ChoiceComponent,canActivate:[AuthGuard]},
   {path:'candidate',component:CandidateComponent,canActivate:[AdminGuard]},
   {path:'user',component:RegistrationComponent},
-  {path:'vote',component:VotingComponent},
+  {path:'vote/:id',component:VotingComponent},
   {path:'elections',component:ElectionsComponent},
-  {path:'poll',component:CreatePollComponent,canActivate:[AdminGuard]}
+  {path:'poll',component:CreatePollComponent,canActivate:[AdminGuard]},
+  {path:'results',component:ResultComponent}
 ];
 
 @NgModule({

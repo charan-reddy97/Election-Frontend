@@ -20,7 +20,8 @@ import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatIconModule } from '@angular/material/icon'
 import { MatSelectModule} from '@angular/material/select'
 import { CreatePollComponent } from './create-poll/create-poll.component';
-import { ElectionsComponent } from './elections/elections.component'
+import { ElectionsComponent } from './elections/elections.component';
+import { ResultComponent } from './result/result.component'
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ElectionsComponent } from './elections/elections.component'
     ChoiceComponent,
     CreatePollComponent,
     ElectionsComponent,
+    ResultComponent,
    
   ],
   imports: [

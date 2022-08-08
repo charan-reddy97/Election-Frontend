@@ -14,18 +14,19 @@ export class UserService {
           lastname:string,
           gender:string,
           dob:number,
+          aadhar:number,
           email:string,
-          password:string,
-          aadhar:number):Observable<User>
+          password:string):Observable<User>
           {
             let request=this.http.post<User>(baseUrl+'/api/user',{
               FirstName:firstname,
               Lastname:lastname,
               Gender:gender,
               DOB:dob,
+              Aadhar:aadhar,
               Email:email,
-              Password:password,
-              Aadhar:aadhar
+              Password:password
+              
             });
             request.subscribe();
             return request;

@@ -1,33 +1,36 @@
 <h2>User Registration</h2>
 <div class="register">
-    <form action="get" >
+    
         <label for="firstname">FirstName</label><br/>
-        <input type="text" id="firstname">
+        <input type="text" id="firstname"[(ngModel)]="firstname">
         <br/>
         <label for="lastname">LastName</label><br/>
-        <input type="text" id="lastname">
+        <input type="text" id="lastname"[(ngModel)]="lastname">
         <br/>
+      
+        <label for="lastname">Gender</label><br/>
+        <input type="text" id="lastname"[(ngModel)]="gender">
         <br/>
-        <select name="gender" >
+      <!---  <select name="gender" >
             <option>Select Gender</option>
             <option>Male</option>
             <option>Female</option>
         </select>
-        <br/>
-        <br/>
+        <br/>-->
+         
         <label for="dob">Date of Birth</label><br/>
-        <input type="date" name="date" id="dob">
+        <input type="date" name="date" id="dob"[(ngModel)]="dob">
         <br/>
         <label for="Aadhar">Aadhar</label><br/>
-        <input type="Aadhar" id="Aadhar">
+        <input type="Aadhar" id="Aadhar"[(ngModel)]="aadhar">
         <br/>
         <label for="email">Email</label><br/>
-        <input type="email" id="email">
+        <input type="email" id="email"[(ngModel)]="email">
         <br/>
         <label for="password">Password</label><br/>
-        <input type="password" id="password"><br/>
+        <input type="password" id="password"[(ngModel)]="password"><br/>
         <br/>
-        <button type="button">Register</button>
+        <button type="button"(click)="AddUser()">Register</button>
 
-    </form>
+  
 </div>

@@ -1,3 +1,18 @@
-<ul>
-    <li *ngFor="let election of elections">{{election.position}}</li>
-</ul>
+<div class="topnav">
+    <a  [routerLink]="['/choice']">Home</a>
+    <a [routerLink]="['/candidate']" > Reg.Candidate </a>
+    <a  [routerLink]="['/poll']">Create Poll</a>
+   
+    <a class="active" >Elections</a>
+    <a >Vote</a>
+    <a >Results</a>
+  </div>
+<div class="card" *ngFor="let election of elections">
+  <div class="header">
+    <div class="">
+    <h2>Position: {{election.position}}</h2>
+    <h2>Poll Number :{{election.pollnumber}}</h2>
+    <a [routerLink]="['/vote',election.pollnumber]"> Click here to see Candidates</a>
+  </div>
+  </div>  
+</div>
