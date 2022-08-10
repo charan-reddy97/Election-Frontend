@@ -11,9 +11,9 @@ import { Election } from '../Common/Election';
 export class CandidateService {
  // id:number=0;
   constructor(private http:HttpClient) { }
-  GetCandidates(Id:number):Observable<Array<Election>>
+  GetCandidates(Id:number):Observable<Election>
   {
-    let candidates=this.http.get<Array<any>>(baseUrl+'/api/poll/byid/'+Id);
+    let candidates=this.http.get<Election>(baseUrl+'/api/poll/byid/'+Id);
     candidates.subscribe();
     return candidates;
   }

@@ -1,6 +1,6 @@
 export class Candidate
 {
-    firstname:string='';
+    firstName:string='';
     lastname:string='';
     address:string ='';
     aadhar:number=0;
@@ -10,6 +10,6 @@ export class Candidate
     photo:string='';
     age:number=0;
     experience:number=0;
-    userid:number=0;
+    id:number=0;
   
 }

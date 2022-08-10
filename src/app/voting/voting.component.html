@@ -2,11 +2,15 @@
     <a  [routerLink]="['/choice']">Home</a>
     <a [routerLink]="['/candidate']" > Reg.Candidate </a>
     <a  [routerLink]="['/poll']">Create Poll</a>
-    <a href="['/election']" >Elections</a>
-    <a class="active" [routerLink]="['/vote']">Vote</a>
+    <a [routerLink]="['/elections']" >Elections</a>
+    <a class="active">Vote</a>
     <a >Results</a>
   </div>
-  <div *ngFor="let candidate of candidates">
-        {{candidate.firstname}}      
+  <div *ngFor="let candidate of candidates" class="card">
+      <div class="header">
+           <h1>Name: {{candidate.firstName}}</h1>
+           <h1>ID:{{candidate.id}}</h1>
+           <button mat-raised-button color="primary" id="vote" (click)="OnClick(candidate.id)">Vote</button> 
+          </div> 
   </div>
 

@@ -5,5 +5,5 @@ export class Election
     pollnumber:number=0;
     position:string='';
     Description:string=''
-    candidate:Candidate|undefined
+    candidates:Candidate[]|undefined
 }

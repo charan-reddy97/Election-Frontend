@@ -19,7 +19,7 @@ export class CandidateComponent implements OnInit {
   photo:string=''
   age:number=0;
   experience:number=0;
-  userid:number=0
+  userid:any=0
 
   constructor(private candidateservice:CandidateService) { }
 
