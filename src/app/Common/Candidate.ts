@@ -13,3 +13,4 @@ export class Candidate
     id:number=0;
   
 }
+
