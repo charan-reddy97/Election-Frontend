@@ -6,11 +6,15 @@
   <a  [routerLink]="['/elections']">Elections</a>
   <a >Vote</a>
   
-  <a>Results</a>
+  <a [routerLink]="['/results']">Results</a>
+  <a [routerLink]="['']" >Logout</a>
 </div>
+
 <div class="home">
+  <h1>Welcome Back &nbsp;<b style="text-transform: uppercase;">Mr.{{name}}</b></h1>
+  <img src="https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-sports-poster-background-material-image_155755.jpg" width="1260px" height="100%"/>
   
-  <iframe src="https://timesofindia.indiatimes.com/topic/sports-club/news" frameborder="2" width="1250px" height="500px"></iframe>
+  <!------>
 </div>
  
 

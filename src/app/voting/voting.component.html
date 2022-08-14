@@ -1,16 +1,24 @@
 <div class="topnav">
-    <a  [routerLink]="['/choice']">Home</a>
-    <a [routerLink]="['/candidate']" > Reg.Candidate </a>
-    <a  [routerLink]="['/poll']">Create Poll</a>
-    <a [routerLink]="['/elections']" >Elections</a>
-    <a class="active">Vote</a>
-    <a >Results</a>
-  </div>
-  <div *ngFor="let candidate of candidates" class="card">
-      <div class="header">
-           <h1>Name: {{candidate.firstName}}</h1>
-           <h1>ID:{{candidate.id}}</h1>
-           <button mat-raised-button color="primary" id="vote" (click)="OnClick(candidate.id)">Vote</button> 
-          </div> 
-  </div>
+  <a [routerLink]="['/choice']" >Home</a>
+  <a [routerLink]="['/poll']">Create Poll</a>
+  <a  [routerLink]="['/elections']">Elections</a>
+  <a class="active">Vote</a>
+  
+  <a [routerLink]="['/results']">Results</a>
+  
+  <a [routerLink]="['']">Logout</a>
+</div>
+
+<div *ngFor="let candidate of candidates" class="card">
+  <div class="header">
+    <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShaggyMullet&accessoriesType=Wayfarers&hairColor=BlondeGolden&facialHairType=BeardMajestic&facialHairColor=Black&clotheType=ShirtVNeck&clotheColor=White&eyeType=Squint&eyebrowType=UpDown&mouthType=Twinkle&skinColor=Tanned'
+/>  <div card="body">
+       <h3>Name: {{candidate.firstName}}</h3>
+       <h3>ID:{{candidate.id}}</h3>
+       
+      </div>
+      <div class="footer">
+        </div>
+      </div> 
+</div><br/>
 

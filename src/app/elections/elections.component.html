@@ -5,14 +5,17 @@
    
     <a class="active" >Elections</a>
     <a >Vote</a>
-    <a >Results</a>
+    <a [routerLink]="['/results']" >Results</a>
+    <a [routerLink]="['']" >Logout</a>
   </div>
 <div class="card" *ngFor="let election of elections">
   <div class="header">
     <div class="">
     <h2>Position: {{election.position}}</h2>
     <h2>Poll Number :{{election.pollnumber}}</h2>
-    <a [routerLink]="['/vote',election.pollnumber]"> Click here to see Candidates</a>
+    <h2>Description:{{election.description}}</h2>
+    <button mat-raised-button color="primary" [routerLink]="['/vote',election.pollnumber]"> Click to see Candidates</button>
+    <button mat-raised-button color="primary" [routerLink]="['/results',election.pollnumber]">View Results</button>
   </div>
   </div>  
 </div>

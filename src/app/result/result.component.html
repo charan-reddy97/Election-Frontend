@@ -1,1 +1,15 @@
-<p>result works!</p>
+<div class="topnav">
+    <a [routerLink]="['/choice']" >Home</a>
+    <a [routerLink]="['/candidate']"> Reg.Candidate </a>
+    <a [routerLink]="['/poll']">Create Poll</a>
+    <a  [routerLink]="['/elections']">Elections</a>
+    <a >Vote</a>
+    
+    <a class="active" >Results</a>
+    <a [routerLink]="['']" >Logout</a>
+  </div>
+<ul *ngFor="let result of Results">
+    <li>{{result.candidateName}}</li>
+    <li>{{result.electionId}}</li>
+    <li>{{result.totalVotes}}</li>
+</ul>

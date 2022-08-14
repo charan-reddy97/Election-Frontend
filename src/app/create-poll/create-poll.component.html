@@ -5,15 +5,12 @@
   
   <a  [routerLink]="['/elections']">Elections</a>
   <a>Vote</a>
-  <a href="">Results</a>
+  <a [routerLink]="['/results']">Results</a>
+  <a [routerLink]="['']" >Logout</a>
 </div>
 <div class="poll">
 <br/>
-<mat-form-field class="example-full-width" appearance="fill" id="electionnumber">
-    <mat-label>Election Number</mat-label>
-    <input matInput type="number"[(ngModel)]="electionnumber">
-  </mat-form-field><br/>
-  <br/>
+
   
 <mat-form-field class="example-full-width" appearance="fill" id="position">
   <mat-label>Position</mat-label>

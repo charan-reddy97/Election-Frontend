@@ -14,13 +14,13 @@ import { VotingComponent } from './voting/voting.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
-  {path:'choice', component:ChoiceComponent,canActivate:[AuthGuard]},
-  {path:'candidate',component:CandidateComponent,canActivate:[AdminGuard]},
+  {path:'choice', component:ChoiceComponent,canActivate:[AdminGuard]},
+  {path:'candidate',component:CandidateComponent},
   {path:'user',component:RegistrationComponent},
   {path:'vote/:id',component:VotingComponent},
   {path:'elections',component:ElectionsComponent},
-  {path:'poll',component:CreatePollComponent,canActivate:[AdminGuard]},
-  {path:'results',component:ResultComponent}
+  {path:'poll',component:CreatePollComponent},
+  {path:'results/:id',component:ResultComponent}
 ];
 
 @NgModule({

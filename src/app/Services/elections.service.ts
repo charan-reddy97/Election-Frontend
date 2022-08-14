@@ -17,7 +17,10 @@ export class ElectionsService {
     elections.subscribe();
     return elections;
   }
-  AddElection(electionnumber:number,position:string,description:string):Observable<Election>
+  AddElection(electionnumber:number,
+              position:string,
+              description:string
+              ):Observable<Election>
   {
    
     let request=this.http.post<Election>(baseUrl+'/api/poll',{ 

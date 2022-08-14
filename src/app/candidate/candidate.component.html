@@ -5,7 +5,8 @@
         
         <a  [routerLink]="['/elections']">Elections</a>
         <a>Vote</a>
-        <a >Results</a>
+        <a [routerLink]="['/results']">Results</a>
+        <a [routerLink]="['']" >Logout</a>
       </div>
 <div class="register" background-color="red"> 
 <mat-toolbar color="primary"  >
@@ -65,10 +66,8 @@
               </mat-form-field><br/>
               <br/>
       
-        <label for="file">Add your photo</label><br/>
-        <input type="file" id="file" [(ngModel)]="photo" observeFiles>
-        <br/>
-        <br/>
+    
+        
         <button mat-raised-button color="primary" (click)="AddCandidate()">Register</button>
    
 
